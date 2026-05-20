@@ -57,7 +57,7 @@
     content: '';
     position: fixed;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctave[...]
     opacity: 0.03;
     pointer-events: none;
     z-index: 9000;
@@ -995,266 +995,351 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">ALEX<span>.</span>VOSS</a>
+  <a href="#" class="nav-logo">LENMARK<span>.</span></a>
   <div class="nav-links">
     <a href="#work">Work</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#process">Process</a>
-    <a href="#contact" class="nav-cta">Hire Me</a>
   </div>
+  <a href="#contact" class="nav-cta">Get In Touch</a>
 </nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-reel">
-    <div class="filmstrip">
-      <div class="film-col">
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div>
-      </div>
-      <div class="film-col">
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div>
-      </div>
-      <div class="film-col">
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div>
-      </div>
-      <div class="film-col">
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div>
-      </div>
-      <div class="film-col">
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div>
-      </div>
-      <div class="film-col">
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div><div class="film-frame"></div>
-        <div class="film-frame"></div><div class="film-frame"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-label">Cinematics · Motion · Storytelling</div>
-  <h1 class="hero-title">FRAME<br>BY <em>frame</em></h1>
-  <p class="hero-sub">I craft visual stories that move people — from raw footage to cinematic experiences that brands remember.</p>
-  <div class="hero-actions">
-    <a href="#work" class="btn-primary"><span>View My Work</span></a>
-    <a href="#contact" class="btn-ghost">Start a Project</a>
-  </div>
-
-  <div class="hero-stats">
-    <div class="stat">
-      <div class="stat-num">120<span>+</span></div>
-      <div class="stat-label">Projects Delivered</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">8<span>yr</span></div>
-      <div class="stat-label">Experience</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">40<span>+</span></div>
-      <div class="stat-label">Happy Clients</div>
-    </div>
-  </div>
-</section>
 
 <!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee-track">
-    <span class="marquee-item">Premiere Pro</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">After Effects</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">DaVinci Resolve</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">Color Grading</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">Motion Graphics</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">Sound Design</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">Visual Effects</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">Narrative Editing</span><span class="marquee-dot">◆</span>
-    <!-- duplicate for infinite loop -->
-    <span class="marquee-item">Premiere Pro</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">After Effects</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">DaVinci Resolve</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">Color Grading</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">Motion Graphics</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">Sound Design</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">Visual Effects</span><span class="marquee-dot">◆</span>
-    <span class="marquee-item">Narrative Editing</span><span class="marquee-dot">◆</span>
+    <div class="marquee-item">Professional Video Editing</div>
+    <div class="marquee-dot">•</div>
+    <div class="marquee-item">Premium Production</div>
+    <div class="marquee-dot">•</div>
+    <div class="marquee-item">Creative Direction</div>
+    <div class="marquee-dot">•</div>
+    <div class="marquee-item">Visual Effects</div>
+    <div class="marquee-dot">•</div>
+    <div class="marquee-item">Professional Video Editing</div>
+    <div class="marquee-dot">•</div>
+    <div class="marquee-item">Premium Production</div>
+    <div class="marquee-dot">•</div>
+    <div class="marquee-item">Creative Direction</div>
+    <div class="marquee-dot">•</div>
+    <div class="marquee-item">Visual Effects</div>
   </div>
 </div>
 
-<!-- WORK -->
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-reel">
+    <div class="filmstrip">
+      <div class="film-col">
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+      </div>
+      <div class="film-col">
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+      </div>
+      <div class="film-col">
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+      </div>
+      <div class="film-col">
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+      </div>
+      <div class="film-col">
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+      </div>
+      <div class="film-col">
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+        <div class="film-frame"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-label">CREATIVE DIRECTOR & VIDEO EDITOR</div>
+  <h1 class="hero-title">Craft Your <em>Vision</em></h1>
+  <p class="hero-sub">Premium video editing and creative direction services for brands and creators who demand excellence.</p>
+
+  <div class="hero-actions">
+    <a href="#contact" class="btn-primary"><span>View Portfolio</span></a>
+    <a href="#about" class="btn-ghost">Learn More</a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">250<span>+</span></div>
+      <div class="stat-label">Projects Completed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">15<span>+</span></div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">98<span>%</span></div>
+      <div class="stat-label">Client Satisfaction</div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / PORTFOLIO -->
 <section class="work" id="work">
   <div class="work-header">
     <div>
-      <div class="section-label">Selected Work</div>
-      <h2 class="section-title">THE REEL</h2>
-      <div class="filter-tabs">
-        <button class="tab active">All</button>
-        <button class="tab">Commercial</button>
-        <button class="tab">Music Video</button>
-        <button class="tab">Documentary</button>
-        <button class="tab">Brand Film</button>
-      </div>
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title">Recent Work</h2>
+    </div>
+    <div class="filter-tabs">
+      <button class="tab active">All</button>
+      <button class="tab">Corporate</button>
+      <button class="tab">Music</button>
+      <button class="tab">Commercial</button>
+      <button class="tab">Documentaries</button>
     </div>
   </div>
 
   <div class="portfolio-grid">
-    <div class="project-card">
-      <div class="card-bg thumb-1">
-        <div class="thumb-inner">
-          <div class="thumb-grid">
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-          </div>
+    <div class="project-card thumb-1">
+      <div class="card-bg"></div>
+      <div class="card-overlay">
+        <div class="card-cat">Corporate</div>
+        <div class="card-title">Brand Story</div>
+        <div class="card-tags">
+          <span class="tag">4K</span>
+          <span class="tag">Color Grading</span>
+          <span class="tag">Motion Graphics</span>
         </div>
       </div>
-      <div class="card-overlay">
-        <div class="card-cat">Commercial · 2024</div>
-        <div class="card-title">NOVA SPORTS — CAMPAIGN</div>
-        <div class="card-tags"><span class="tag">Color Grade</span><span class="tag">VFX</span><span class="tag">4K</span></div>
-      </div>
       <div class="card-play">▶</div>
+      <div class="thumb-inner">
+        <div class="thumb-grid">
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="project-card">
-      <div class="card-bg thumb-2">
-        <div class="thumb-inner">
-          <div class="thumb-grid">
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-          </div>
+    <div class="project-card thumb-2">
+      <div class="card-bg"></div>
+      <div class="card-overlay">
+        <div class="card-cat">Music</div>
+        <div class="card-title">Music Video</div>
+        <div class="card-tags">
+          <span class="tag">Cinematic</span>
+          <span class="tag">VFX</span>
+          <span class="tag">Color Grade</span>
         </div>
       </div>
-      <div class="card-overlay">
-        <div class="card-cat">Music Video · 2024</div>
-        <div class="card-title">ECHO — "PARALLELS"</div>
-        <div class="card-tags"><span class="tag">Cinematic</span><span class="tag">Motion</span></div>
-      </div>
       <div class="card-play">▶</div>
+      <div class="thumb-inner">
+        <div class="thumb-grid">
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="project-card">
-      <div class="card-bg thumb-3">
-        <div class="thumb-inner">
-          <div class="thumb-grid">
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-          </div>
+    <div class="project-card thumb-3">
+      <div class="card-bg"></div>
+      <div class="card-overlay">
+        <div class="card-cat">Commercial</div>
+        <div class="card-title">Product Launch</div>
+        <div class="card-tags">
+          <span class="tag">Commercial</span>
+          <span class="tag">Animation</span>
+          <span class="tag">Fast Cuts</span>
         </div>
       </div>
-      <div class="card-overlay">
-        <div class="card-cat">Brand Film · 2024</div>
-        <div class="card-title">MERIDIAN — ORIGIN</div>
-        <div class="card-tags"><span class="tag">Narrative</span><span class="tag">Grade</span></div>
-      </div>
       <div class="card-play">▶</div>
+      <div class="thumb-inner">
+        <div class="thumb-grid">
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="project-card">
-      <div class="card-bg thumb-4">
-        <div class="thumb-inner">
-          <div class="thumb-grid">
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-          </div>
+    <div class="project-card thumb-4">
+      <div class="card-bg"></div>
+      <div class="card-overlay">
+        <div class="card-cat">Documentary</div>
+        <div class="card-title">Environmental Doc</div>
+        <div class="card-tags">
+          <span class="tag">4K</span>
+          <span class="tag">Sound Design</span>
+          <span class="tag">Narrative</span>
         </div>
       </div>
-      <div class="card-overlay">
-        <div class="card-cat">Documentary · 2023</div>
-        <div class="card-title">BORDERLESS</div>
-        <div class="card-tags"><span class="tag">Long-form</span><span class="tag">Interview</span></div>
-      </div>
       <div class="card-play">▶</div>
+      <div class="thumb-inner">
+        <div class="thumb-grid">
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="project-card">
-      <div class="card-bg thumb-5">
-        <div class="thumb-inner">
-          <div class="thumb-grid">
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-          </div>
+    <div class="project-card thumb-5">
+      <div class="card-bg"></div>
+      <div class="card-overlay">
+        <div class="card-cat">Music</div>
+        <div class="card-title">Performance Footage</div>
+        <div class="card-tags">
+          <span class="tag">Live Event</span>
+          <span class="tag">Multi-Cam</span>
+          <span class="tag">Color Grade</span>
         </div>
       </div>
-      <div class="card-overlay">
-        <div class="card-cat">Commercial · 2023</div>
-        <div class="card-title">VANTA WATCH — LAUNCH</div>
-        <div class="card-tags"><span class="tag">Product</span><span class="tag">VFX</span></div>
-      </div>
       <div class="card-play">▶</div>
+      <div class="thumb-inner">
+        <div class="thumb-grid">
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="project-card">
-      <div class="card-bg thumb-6">
-        <div class="thumb-inner">
-          <div class="thumb-grid">
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-            <div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div><div class="thumb-cell"></div>
-          </div>
+    <div class="project-card thumb-6">
+      <div class="card-bg"></div>
+      <div class="card-overlay">
+        <div class="card-cat">Corporate</div>
+        <div class="card-title">Training Series</div>
+        <div class="card-tags">
+          <span class="tag">Educational</span>
+          <span class="tag">Graphics</span>
+          <span class="tag">Subtitles</span>
         </div>
       </div>
-      <div class="card-overlay">
-        <div class="card-cat">Brand Film · 2023</div>
-        <div class="card-title">ATLAS — EXPEDITION</div>
-        <div class="card-tags"><span class="tag">Adventure</span><span class="tag">Aerial</span></div>
-      </div>
       <div class="card-play">▶</div>
+      <div class="thumb-inner">
+        <div class="thumb-grid">
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+          <div class="thumb-cell"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section class="about" id="about">
-  <div class="section-label">About Me</div>
-  <h2 class="section-title">THE EDITOR<br>BEHIND THE CUT</h2>
   <div class="about-grid">
     <div class="about-visual">
-      <div class="about-photo"></div>
-      <div class="about-photo-label">Alex Voss — Video Editor & Colorist</div>
-      <div class="about-accent"></div>
-      <div class="about-corner">AV</div>
+      <div class="about-photo">
+        <div class="about-accent"></div>
+        <div class="about-corner">L</div>
+      </div>
+      <div class="about-photo-label">Lenmark — Editor</div>
     </div>
     <div class="about-content">
-      <p>I'm a <strong>freelance video editor and colorist</strong> based in Los Angeles with 8 years of experience turning raw footage into stories that resonate.</p>
-      <p>My work spans <strong>commercial campaigns, music videos, documentary features, and brand films</strong>. Every cut is intentional. Every color grade serves the narrative. Every second earns its place on screen.</p>
-      <p>I've worked with emerging artists and global brands alike — because <strong>great storytelling doesn't care about budget size.</strong></p>
+      <p class="section-label">About</p>
+      <h2 class="section-title">Creative Vision <em>Realized</em></h2>
+      <p>Hi, I'm <strong>Lenmark</strong>, a passionate video editor and creative director based in the digital realm. With over 15 years of experience, I've worked with countless brands and creators to bring their visions to life.</p>
+      <p>My approach combines technical expertise with artistic sensibility, ensuring every frame serves the story. From concept to final delivery, I'm committed to excellence and innovation.</p>
+      <p>I specialize in <strong>color grading, motion graphics, VFX, and narrative editing</strong> across multiple formats and platforms. Let's create something extraordinary together.</p>
+
       <div class="skills-list">
         <div class="skill-item">
-          <div class="skill-name">Narrative Editing</div>
-          <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+          <div class="skill-name">Video Editing</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%;"></div>
+          </div>
         </div>
         <div class="skill-item">
           <div class="skill-name">Color Grading</div>
-          <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 88%;"></div>
+          </div>
         </div>
         <div class="skill-item">
           <div class="skill-name">Motion Graphics</div>
-          <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 82%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Visual Effects</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%;"></div>
+          </div>
         </div>
         <div class="skill-item">
           <div class="skill-name">Sound Design</div>
-          <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 78%;"></div>
+          </div>
         </div>
         <div class="skill-item">
-          <div class="skill-name">VFX Compositing</div>
-          <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name">3D Integration</div>
-          <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+          <div class="skill-name">Creative Direction</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 92%;"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -1263,110 +1348,83 @@
 
 <!-- SERVICES -->
 <section class="services" id="services">
-  <div class="section-label">What I Offer</div>
-  <h2 class="section-title">SERVICES</h2>
+  <p class="section-label">Services</p>
+  <h2 class="section-title">What I Offer</h2>
+
   <div class="services-grid">
     <div class="service-card">
       <div class="service-num">01</div>
-      <div class="service-icon">🎬</div>
+      <div class="service-icon">✂️</div>
       <div class="service-name">Video Editing</div>
-      <div class="service-desc">Precision cuts, pacing, and story structure that keeps viewers locked in from the first frame to the last.</div>
+      <p class="service-desc">Professional editing for commercials, documentaries, music videos, and more. Tailored to your brand's unique voice.</p>
       <div class="service-tools">
         <span class="tool-tag">Premiere Pro</span>
-        <span class="tool-tag">Final Cut</span>
-        <span class="tool-tag">Resolve</span>
+        <span class="tool-tag">Final Cut Pro</span>
+        <span class="tool-tag">DaVinci</span>
       </div>
     </div>
+
     <div class="service-card">
       <div class="service-num">02</div>
       <div class="service-icon">🎨</div>
       <div class="service-name">Color Grading</div>
-      <div class="service-desc">Professional color science from technical correction to cinematic looks that define your visual identity.</div>
+      <p class="service-desc">Advanced color correction and creative grading to enhance mood and visual impact of your footage.</p>
       <div class="service-tools">
         <span class="tool-tag">DaVinci Resolve</span>
-        <span class="tool-tag">LUTs</span>
-        <span class="tool-tag">HDR</span>
+        <span class="tool-tag">Lumetri</span>
+        <span class="tool-tag">3D LUT</span>
       </div>
     </div>
+
     <div class="service-card">
       <div class="service-num">03</div>
       <div class="service-icon">✨</div>
       <div class="service-name">Motion Graphics</div>
-      <div class="service-desc">Animated titles, lower thirds, and branded motion elements that elevate your production value.</div>
+      <p class="service-desc">Eye-catching animations and graphics that elevate your content and tell your story dynamically.</p>
       <div class="service-tools">
         <span class="tool-tag">After Effects</span>
-        <span class="tool-tag">Motion</span>
         <span class="tool-tag">Cinema 4D</span>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="service-num">04</div>
-      <div class="service-icon">🔊</div>
-      <div class="service-name">Sound Design</div>
-      <div class="service-desc">Music sync, foley, SFX layering, and audio mastering that makes your video feel complete.</div>
-      <div class="service-tools">
-        <span class="tool-tag">Audition</span>
-        <span class="tool-tag">Logic Pro</span>
-        <span class="tool-tag">Isotope</span>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="service-num">05</div>
-      <div class="service-icon">🌐</div>
-      <div class="service-name">Social Content</div>
-      <div class="service-desc">Platform-native cuts for YouTube, Instagram Reels, TikTok, and ads — optimized for each format.</div>
-      <div class="service-tools">
-        <span class="tool-tag">Reels</span>
-        <span class="tool-tag">TikTok</span>
-        <span class="tool-tag">YouTube</span>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="service-num">06</div>
-      <div class="service-icon">🎞</div>
-      <div class="service-name">Full Post-Production</div>
-      <div class="service-desc">End-to-end post: edit, grade, audio, graphics, and delivery-ready export in every format you need.</div>
-      <div class="service-tools">
-        <span class="tool-tag">4K/8K</span>
-        <span class="tool-tag">RAW</span>
-        <span class="tool-tag">DCP</span>
+        <span class="tool-tag">Blender</span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials" id="testimonials">
-  <div class="section-label">Client Voices</div>
-  <h2 class="section-title">WHAT THEY SAY</h2>
+<section class="testimonials">
+  <p class="section-label">Testimonials</p>
+  <h2 class="section-title">Client Feedback</h2>
+
   <div class="testimonials-grid">
     <div class="testimonial-card">
-      <p class="testimonial-text">Alex transformed 3 weeks of raw footage into a 6-minute film that made our entire team emotional. The pacing, the color, the music sync — every detail was considered.</p>
+      <p class="testimonial-text">Lenmark transformed our raw footage into a cinematic masterpiece. The attention to detail and creative expertise is unmatched.</p>
       <div class="testimonial-author">
-        <div class="author-avatar">SM</div>
+        <div class="author-avatar">A</div>
         <div>
-          <div class="author-name">Sarah M.</div>
-          <div class="author-role">Creative Director · NOVA Sports</div>
+          <div class="author-name">Alex Rivera</div>
+          <div class="author-role">Marketing Director</div>
         </div>
       </div>
     </div>
+
     <div class="testimonial-card">
-      <p class="testimonial-text">We hired Alex for our music video and ended up with something that felt like a short film. The cinematic quality was beyond what we expected at our budget.</p>
+      <p class="testimonial-text">Professional, responsive, and incredibly talented. Lenmark understood our vision immediately and exceeded expectations.</p>
       <div class="testimonial-author">
-        <div class="author-avatar">JR</div>
+        <div class="author-avatar">J</div>
         <div>
-          <div class="author-name">James R.</div>
-          <div class="author-role">Lead Artist · Echo</div>
+          <div class="author-name">Jordan Smith</div>
+          <div class="author-role">Producer</div>
         </div>
       </div>
     </div>
+
     <div class="testimonial-card">
-      <p class="testimonial-text">Fast turnaround, impeccable communication, and the color grade alone was worth every penny. Alex is the only editor I refer people to without hesitation.</p>
+      <p class="testimonial-text">Working with Lenmark was a game-changer for our production. The editing quality and turnaround time were exceptional.</p>
       <div class="testimonial-author">
-        <div class="author-avatar">LP</div>
+        <div class="author-avatar">M</div>
         <div>
-          <div class="author-name">Laura P.</div>
-          <div class="author-role">Founder · Meridian Studio</div>
+          <div class="author-name">Morgan Lee</div>
+          <div class="author-role">Content Creator</div>
         </div>
       </div>
     </div>
@@ -1375,162 +1433,138 @@
 
 <!-- PROCESS -->
 <section class="process" id="process">
-  <div class="section-label">How It Works</div>
-  <h2 class="section-title">THE PROCESS</h2>
+  <p class="section-label">Process</p>
+  <h2 class="section-title">How I Work</h2>
+
   <div class="process-steps">
     <div class="step">
       <div class="step-circle">01</div>
-      <div class="step-name">Discovery</div>
-      <div class="step-desc">We talk about your vision, goals, audience, and deliverables. I ask the questions that uncover what your video truly needs.</div>
+      <div class="step-name">Consultation</div>
+      <p class="step-desc">Discuss your vision, goals, and specific requirements for the project.</p>
     </div>
     <div class="step">
       <div class="step-circle">02</div>
-      <div class="step-name">First Cut</div>
-      <div class="step-desc">I edit a rough assembly and send it with notes explaining my decisions. Clarity over silence at every stage.</div>
+      <div class="step-name">Planning</div>
+      <p class="step-desc">Create a detailed project plan including timeline and deliverables.</p>
     </div>
     <div class="step">
       <div class="step-circle">03</div>
-      <div class="step-name">Refine</div>
-      <div class="step-desc">Two rounds of revisions included. I address your feedback and fine-tune pacing, color, and audio until it's right.</div>
+      <div class="step-name">Execution</div>
+      <p class="step-desc">Professional editing and post-production with regular progress updates.</p>
     </div>
     <div class="step">
       <div class="step-circle">04</div>
       <div class="step-name">Delivery</div>
-      <div class="step-desc">Final export in every format you need — 4K master, compressed web versions, platform-specific cuts. Done.</div>
+      <p class="step-desc">Final review, revisions, and delivery in your required format.</p>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
-  <div class="section-label">Get In Touch</div>
-  <h2 class="section-title">LET'S BUILD<br>SOMETHING <em>great</em></h2>
   <div class="contact-inner">
     <div class="contact-info">
-      <p>Whether you have a brief ready or just an idea — I'd love to hear it. I take on select projects each month to ensure every client gets my full attention.</p>
+      <h3>Let's Create <em>Together</em></h3>
+      <p>Ready to bring your creative vision to life? Get in touch and let's discuss your project. I'm excited to collaborate with you.</p>
+
       <div class="contact-links">
-        <a href="mailto:alex@vossedits.com" class="contact-link">
-          <div class="contact-link-icon">✉</div>
-          alex@vossedits.com
+        <a href="mailto:hello@lenmark.com" class="contact-link">
+          <div class="contact-link-icon">✉️</div>
+          <span>hello@lenmark.com</span>
         </a>
-        <a href="tel:+13105550194" class="contact-link">
-          <div class="contact-link-icon">☎</div>
-          +1 (310) 555-0194
+        <a href="tel:+1234567890" class="contact-link">
+          <div class="contact-link-icon">📞</div>
+          <span>+1 (234) 567-890</span>
         </a>
-        <a href="#" class="contact-link">
-          <div class="contact-link-icon">in</div>
-          linkedin.com/in/alexvoss
-        </a>
-        <a href="#" class="contact-link">
-          <div class="contact-link-icon">▶</div>
-          vimeo.com/alexvoss
+        <a href="https://instagram.com/lenmark" class="contact-link">
+          <div class="contact-link-icon">📱</div>
+          <span>@lenmark</span>
         </a>
       </div>
     </div>
-    <div class="contact-form">
+
+    <form class="contact-form">
+      <div class="form-group">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-input" placeholder="Your Name" required>
+      </div>
+
       <div class="form-row">
         <div class="form-group">
-          <label class="form-label">Your Name</label>
-          <input type="text" class="form-input" placeholder="Jane Doe">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="your@email.com" required>
         </div>
         <div class="form-group">
-          <label class="form-label">Your Email</label>
-          <input type="email" class="form-input" placeholder="jane@brand.com">
+          <label class="form-label">Phone</label>
+          <input type="tel" class="form-input" placeholder="+1 (555) 000-0000">
         </div>
       </div>
+
       <div class="form-group">
         <label class="form-label">Project Type</label>
-        <input type="text" class="form-input" placeholder="e.g. Brand Film, Music Video, Commercial">
+        <input type="text" class="form-input" placeholder="e.g., Commercial, Music Video, Documentary" required>
       </div>
+
       <div class="form-group">
-        <label class="form-label">Budget Range</label>
-        <input type="text" class="form-input" placeholder="e.g. $2,000 – $5,000">
+        <label class="form-label">Message</label>
+        <textarea class="form-textarea" placeholder="Tell me about your project..." required></textarea>
       </div>
-      <div class="form-group">
-        <label class="form-label">Tell Me About Your Project</label>
-        <textarea class="form-textarea" placeholder="What are you making? What's the goal? When do you need it?"></textarea>
-      </div>
-      <button class="form-submit"><span>Send Inquiry →</span></button>
-    </div>
+
+      <button type="submit" class="form-submit"><span>Send Message</span></button>
+    </form>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">ALEX<span>.</span>VOSS</div>
-  <div class="footer-copy">© 2024 Alex Voss. All rights reserved.</div>
+  <div class="footer-logo">LENMARK<span>.</span></div>
+  <p class="footer-copy">© 2024 LENMARK — Video Editing & Creative Direction</p>
   <div class="footer-socials">
-    <a href="#" class="footer-social">in</a>
-    <a href="#" class="footer-social">▶</a>
-    <a href="#" class="footer-social">ig</a>
-    <a href="#" class="footer-social">tw</a>
+    <a href="#" class="footer-social">FB</a>
+    <a href="#" class="footer-social">IG</a>
+    <a href="#" class="footer-social">TW</a>
+    <a href="#" class="footer-social">YT</a>
   </div>
 </footer>
 
 <script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
-  const ring = document.getElementById('cursorRing');
-  let mx = 0, my = 0, rx = 0, ry = 0;
-
-  document.addEventListener('mousemove', e => {
-    mx = e.clientX; my = e.clientY;
-    cursor.style.left = mx - 5 + 'px';
-    cursor.style.top = my - 5 + 'px';
-  });
-
-  function animRing() {
-    rx += (mx - rx - 18) * 0.12;
-    ry += (my - ry - 18) * 0.12;
-    ring.style.left = rx + 'px';
-    ring.style.top = ry + 'px';
-    requestAnimationFrame(animRing);
-  }
-  animRing();
-
-  document.querySelectorAll('a, button, .project-card, .tab').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.style.transform = 'scale(2)';
-      ring.style.transform = 'scale(1.5)';
-    });
-    el.addEventListener('mouseleave', () => {
-      cursor.style.transform = 'scale(1)';
-      ring.style.transform = 'scale(1)';
-    });
-  });
-
-  // Scroll progress bar
+  const cursorRing = document.getElementById('cursorRing');
   const scrollLine = document.getElementById('scrollLine');
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    cursorRing.style.left = (e.clientX - 18) + 'px';
+    cursorRing.style.top = (e.clientY - 18) + 'px';
+  });
+
+  // Scroll progress indicator
   window.addEventListener('scroll', () => {
-    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-    scrollLine.style.width = (pct * 100) + '%';
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    scrollLine.style.width = scrollPercent + '%';
   });
 
-  // Filter tabs
-  document.querySelectorAll('.tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
+  // Skill bars animation on scroll
+  const observerOptions = {
+    threshold: 0.5
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animation = 'fillBar 1.5s ease forwards';
+      }
     });
-  });
+  }, observerOptions);
 
-  // Smooth nav
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const t = document.querySelector(a.getAttribute('href'));
-      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
-    });
-  });
-
-  // Form submit feedback
-  document.querySelector('.form-submit').addEventListener('click', function() {
-    this.querySelector('span').textContent = 'Sent! I\'ll be in touch ✓';
-    this.style.background = '#1a6b1a';
-    setTimeout(() => {
-      this.querySelector('span').textContent = 'Send Inquiry →';
-      this.style.background = '';
-    }, 3000);
+  document.querySelectorAll('.skill-fill').forEach(fill => {
+    observer.observe(fill);
   });
 </script>
-</bo<iframe width="560" height="315" src="https://www.youtube.com/embed/ulcyc8yD2Bo?si=6PdoYe6pfOnD0JSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>dy>
+
+</body>
 </html>
