@@ -1234,13 +1234,13 @@
       </div>
     </div>
 
-    <!-- Card 4 — Real Work -->
-    <div class="project-card has-video" data-video="11nqyhyQqfPPZWjKgnbu77zqa1N4a7V45" data-title="Motion Graphics Sample 1">
+    <!-- Card 4 — Real Work: Motion Graphics Sample 1 -->
+    <div class="project-card has-video" data-videoid="Sy8AHKz3wKo" data-title="Motion Graphics Sample 1">
       <div class="live-badge">▶ Real Work</div>
-      <div class="card-bg thumb-4" style="background:linear-gradient(135deg,#1a0800,#3d1200,#0a0a0a);">
-        <div class="thumb-inner" style="display:flex;align-items:center;justify-content:center;">
-          <span style="font-size:52px;opacity:0.2;">✨</span>
-        </div>
+      <div class="card-bg" style="background:#000;">
+        <img src="https://img.youtube.com/vi/Sy8AHKz3wKo/maxresdefault.jpg"
+             onerror="this.src='https://img.youtube.com/vi/Sy8AHKz3wKo/hqdefault.jpg'"
+             style="width:100%;height:100%;object-fit:cover;opacity:0.85;" alt="Motion Graphics Sample 1">
       </div>
       <div class="card-play">▶</div>
       <div class="card-overlay">
@@ -1254,13 +1254,13 @@
       </div>
     </div>
 
-    <!-- Card 5 — Real Work -->
-    <div class="project-card has-video" data-video="1A_T_Jj4RGft9xnjUfj_WicgVfwy94k5F" data-title="Motion Graphics Sample 2">
+    <!-- Card 5 — Real Work: Motion Graphics Sample 2 -->
+    <div class="project-card has-video" data-videoid="jCZFVtpdVx8" data-title="Motion Graphics Sample 2">
       <div class="live-badge">▶ Real Work</div>
-      <div class="card-bg thumb-5" style="background:linear-gradient(135deg,#1a1200,#3d2d00,#0a0a0a);">
-        <div class="thumb-inner" style="display:flex;align-items:center;justify-content:center;">
-          <span style="font-size:52px;opacity:0.2;">🎬</span>
-        </div>
+      <div class="card-bg" style="background:#000;">
+        <img src="https://img.youtube.com/vi/jCZFVtpdVx8/maxresdefault.jpg"
+             onerror="this.src='https://img.youtube.com/vi/jCZFVtpdVx8/hqdefault.jpg'"
+             style="width:100%;height:100%;object-fit:cover;opacity:0.85;" alt="Motion Graphics Sample 2">
       </div>
       <div class="card-play">▶</div>
       <div class="card-overlay">
@@ -1274,13 +1274,13 @@
       </div>
     </div>
 
-    <!-- Card 6 — Real Work -->
-    <div class="project-card has-video" data-video="1Ji2c6alHyZRoyL4eaEHspHHOA9isbOA-" data-title="Motion Graphics Sample 3">
+    <!-- Card 6 — Real Work: Motion Graphics Sample 3 -->
+    <div class="project-card has-video" data-videoid="6vAI0uyDHb4" data-title="Motion Graphics Sample 3">
       <div class="live-badge">▶ Real Work</div>
-      <div class="card-bg thumb-6" style="background:linear-gradient(135deg,#0a001a,#1a0038,#0a0a0a);">
-        <div class="thumb-inner" style="display:flex;align-items:center;justify-content:center;">
-          <span style="font-size:52px;opacity:0.2;">🎨</span>
-        </div>
+      <div class="card-bg" style="background:#000;">
+        <img src="https://img.youtube.com/vi/6vAI0uyDHb4/maxresdefault.jpg"
+             onerror="this.src='https://img.youtube.com/vi/6vAI0uyDHb4/hqdefault.jpg'"
+             style="width:100%;height:100%;object-fit:cover;opacity:0.85;" alt="Motion Graphics Sample 3">
       </div>
       <div class="card-play">▶</div>
       <div class="card-overlay">
@@ -1578,9 +1578,9 @@
 
   document.querySelectorAll('.project-card.has-video').forEach(card => {
     card.addEventListener('click', () => {
-      const fileId = card.dataset.video;
+      const videoId = card.dataset.videoid;
       const title = card.dataset.title;
-      modalIframe.src = `https://drive.google.com/file/d/${fileId}/preview`;
+      modalIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
       modalLabel.textContent = title;
       modal.classList.add('active');
     });
